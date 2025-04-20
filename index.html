@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Biodata</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+        }
+        .biodata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .biodata-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .biodata-card h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-color);
+        }
+        .social-links a {
+            color: var(--primary-color);
+            margin-right: 10px;
+            text-decoration: none;
+        }
+        ul.skills-list, ul.hobbies-list {
+            list-style-type: none;
+        }
+        ul.skills-list li::before, ul.hobbies-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        ol.wishlist {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="4e732ced3463d06de0ca9a15b6153677.png" alt="photo">
+        <div class="container">
+            <h1>My Biodata</h1>
+            <p>Personal information and background</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="campus-life.html">Campus Life</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="profile-header">
+            <img src="-5773998460893248704_121 (3).jpg" alt="Ali Fathelrahman" class="profile-pic">
+            <div>
+                <h1>Ali Fathelrahman</h1>
+                <p>Bachelor of Information Technology (IT) Student</p>
+                <p>Universiti Tun Hussein Onn Malaysia</p>
+            </div>
+        </div>
+
+        <div class="biodata-grid">
+            <div class="biodata-card">
+                <h2>Basic Information</h2>
+                <p><strong>Date of Birth:</strong> May 5, 2003</p>
+                <p><strong>Religion:</strong> Muslim</p>
+                <p><strong>Race:</strong> African</p>
+            </div>
+            
+            <div class="biodata-card">
+                <h2>Address</h2>
+                <p><strong>Street:</strong> Jalan University 22</p>
+                <p><strong>Town:</strong> Parit Raja</p>
+                <p><strong>State:</strong> Johor</p>
+            </div>
+            
+            <div class="biodata-card">
+                <h2>Contact Information</h2>
+                <p><strong>Mobile Phone:</strong> +601161819546</p>
+                <p><strong>Social Media:</strong> 
+                    <span class="social-links">
+                        <a href="#">Facebook</a> | 
+                        <a href="#">instagram</a>
+                    </span>
+                </p>
+                <p><strong>Website:</strong> 3LIFT7</p>
+            </div>
+            
+            <div class="biodata-card">
+                <h2>Education & Skills</h2>
+                <p><strong>Course and Institution:</strong><br>
+                Bachelor of Information Technology (IT),<br>
+                Universiti Tun Hussein Onn Malaysia</p>
+                
+                <p><strong>Programming skills:</strong></p>
+                <ul class="skills-list">
+                    <li>HTML/CSS</li>
+                </ul>
+            </div>
+            
+            <div class="biodata-card">
+                <h2>Hobbies</h2>
+                <ul class="hobbies-list">
+                    <li>Programming</li>
+                    <li>Reading</li>
+                    <li>Playing video games</li>
+                </ul>
+            </div>
+            
+            <div class="biodata-card">
+                <h2>2025 Wishlist</h2>
+                <ol class="wishlist">
+                    <li>Learn React framework</li>
+                    <li>Travel to Japan</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Personal Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
